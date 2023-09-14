@@ -1,0 +1,108 @@
+/*LITEN skärm*/
+@media only screen and (max-width: 480px) {
+  #menu {
+    display: none;
+  }
+
+  #menu-toggle:checked~#menu {
+    display: block;
+  }
+
+  #menu li {
+    display: block;
+  }
+
+  #menu-toggle {
+    display: none;
+  }
+}
+
+/*STOR skärm*/
+@media only screen and (min-width: 481px) {
+  #menu-toggle {
+    display: none;
+  }
+
+  #menuIcon {
+    display: none;
+  }
+
+
+  #menu li {
+    display: inline;
+  }
+
+
+}
+
+/*BODY*/
+body {
+  padding: 2.5rem;
+}
+
+
+/*HEADER*/
+
+
+header a {
+  text-decoration: overline;
+  color: rgba(0, 0, 0, 0.88);
+}
+
+/*NAV*/
+
+nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#menu li a{
+  text-decoration: none;
+}
+
+
+nav ul li a {
+  text-decoration: none;
+  color: rgb(47, 15, 77);
+  font-size: 1.2rem;
+}
+
+
+
+/*OM OSS*/
+
+.anställd img {
+  width: 50vw;
+}
+
+.anställd img:hover {
+  border: 0 2em 0 2em;
+  border-style: outset;
+}
+
+.anställd a {
+  text-decoration: none;
+  color: rgb(7, 7, 143);
+}
+
+.anställd {
+  margin-bottom: 1rem;
+}
+
+.anställd p {
+  line-height: 30%;
+  padding-bottom: 2em;
+  border-bottom: #C2E5F2 dashed;
+}
+
+.container-anstallda {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+h1,
+#kontakten {
+  text-align: center;
+}
