@@ -20,9 +20,11 @@
     display: none;
   }
 
-  .ekonomiskt {
+
+  .ekonomiskt{
     display: block;
   }
+
 
 }
 
@@ -40,10 +42,6 @@
     display: inline;
   }
 
-  .ekonomiskt {
-    display: flex;
-    justify-content: space-between;
-  }
 
 
 }
@@ -64,6 +62,11 @@ a {
 header a {
   text-decoration: overline;
   color: rgba(0, 0, 0, 0.88);
+}
+
+header a h1{
+  margin-top: 0;
+  letter-spacing: 0.05em;
 }
 
 /*NAV*/
@@ -88,6 +91,7 @@ header a {
   width: 50vw;
   display: inline;
   justify-content: center;
+  min-width: 370px;
 }
 
 .anställd img:hover {
@@ -120,12 +124,16 @@ h1,
 
 /*GALLERI*/
 
+
+/*OBS får ej ett block med bild+beskrivning+pris+knapp att stanna vid en viss minimal bredd. nu kan de bli jättesmå...*/
+
 #produkter {
   display: flex;
-  gap: 1em;
+  gap: 1.3em;
   flex-wrap: wrap;
   justify-content: center;
 }
+
 
 #produkter img,
 #produkter p {
@@ -140,4 +148,5 @@ h1,
   letter-spacing: 0.2em;
   text-transform: uppercase;
 }
+
 
