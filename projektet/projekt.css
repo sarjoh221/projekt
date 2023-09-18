@@ -1,0 +1,283 @@
+header {
+    background-color: white;
+    padding: 0.5em;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: right;
+    display: flex;
+    align-items:center;
+    justify-content: flex-end;
+    z-index: 2;
+}
+
+body {
+    display: flex;
+    padding: 0 35px;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: navajowhite;
+    margin-top: 30px;
+}
+
+.wrapper .carouel {
+    font-size: 0px;
+    cursor: pointer;
+    overflow: hidden;
+    white-space: nowrap;
+    scroll-behavior: smooth;
+}
+
+.wrapper {
+    max-width: 1200px;
+    position: relative;
+}
+
+.wrapper i{
+    top: 50%;
+    height: 46px;
+    width: 46px;
+    cursor: pointer;
+    position: absolute;
+    font-size: 1.2rem;
+    text-align: center;
+    line-height: 46px;
+    background: #fff;
+    border-radius: 50%;
+    transform: translateY(-50%);
+    z-index: 1; 
+}
+
+.wrapper i:first-child {
+    left: -23px;
+}
+
+.wrapper i:last-child {
+    right: -23px;
+}
+
+.carouel img{
+    height: 340px;
+    object-fit: cover;
+    margin-left: 14px;
+    width: calc(100% / 3);
+    transition: 0.5s;
+    position: relative;
+}
+
+.carouel img:first-child {
+    margin-left: 0px;
+}
+
+.carouel img:hover {
+    height: 342px;
+    box-shadow: 5px 10px 5px 5px gray;
+    opacity: 0.8;
+}
+
+.wrapper12 {
+    text-align: center;
+}
+
+.createAddToCart {
+    background-color: white;
+    border-radius: 50%;
+    align-items: center;
+    color: black;
+}
+
+.Container {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.skills {
+    text-align: right;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: white;
+    animation: expandFotboll 4s ease-out forwards;
+}
+
+.fotboll {
+    width: 0%;
+    background-color: black;
+    animation: expandFotboll 4s ease-out forwards;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.basket {
+    width: 0%;
+    background-color: black;
+    animation: expandBasket 4s ease-out forwards;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.amFotboll {
+    width: 0%;
+    background-color: black;
+    animation: expandAmFotboll 4s ease-out forwards;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.tennis {
+    width: 0%;
+    background-color: black;
+    animation: expandTennis 4s ease-out forwards;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.ishockey {
+    width: 0%;
+    background-color: black;
+    animation: expandIshockey 4s ease-out forwards;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+
+@keyframes expandFotboll {
+    to {
+        width: 99%; /* När animationen är klar, sätt bredden till 70% */
+    }
+}
+
+@keyframes expandBasket {
+    to {
+        width: 88%; /* När animationen är klar, sätt bredden till 70% */
+    }
+}
+
+@keyframes expandAmFotboll {
+    to {
+        width: 70%; /* När animationen är klar, sätt bredden till 70% */
+    }
+}
+
+@keyframes expandTennis {
+    to {
+        width: 50%; /* När animationen är klar, sätt bredden till 70% */
+    }
+}
+
+@keyframes expandIshockey {
+    to {
+        width: 8%; /* När animationen är klar, sätt bredden till 70% */
+    }
+}
+
+@media only screen and (min-width:380px) and (max-width:1280px) {
+    header {
+        background-color: white;
+        padding: 0.5em;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        text-align: right;
+        display: flex;
+        align-items:center;
+        justify-content: flex-end;
+        z-index: 2;
+    }
+    
+    body {
+        display: flex;
+        padding: 0 35px;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        background: navajowhite;
+        margin-top: 60px;
+        margin-bottom: 30px;
+    }
+    
+    .wrapper .carouel {
+        font-size: 0px;
+        cursor: pointer;
+        overflow: hidden;
+        white-space: nowrap;
+        scroll-behavior: smooth;
+    }
+    
+    .wrapper {
+        max-width: 1200px;
+        position: relative;
+    }
+    
+    .wrapper i{
+        top: 50%;
+        height: 46px;
+        width: 46px;
+        cursor: pointer;
+        position: absolute;
+        font-size: 1.2rem;
+        text-align: center;
+        line-height: 46px;
+        background: #fff;
+        border-radius: 50%;
+        transform: translateY(-50%);
+        z-index: 1; 
+    }
+    
+    .wrapper i:first-child {
+        left: -23px;
+    }
+    
+    .wrapper i:last-child {
+        right: -23px;
+    }
+    
+    .carouel img{
+        height: 340px;
+        object-fit: cover;
+        margin-left: 30px;
+        width: 100%;
+        transition: 0.5s;
+        position: relative;
+    }
+    
+    .carouel img:first-child {
+        margin-left: 0px;
+    }
+    
+    .carouel img:hover {
+        height: 350px;
+        box-shadow: 5px 10px 5px 5px gray;
+        opacity: 0.8;
+    }
+    
+    .wrapper12 {
+        text-align: center;
+    }
+    
+    .createAddToCart {
+        background-color: white;
+        border-radius: 50%;
+        align-items: center;
+        color: black;
+    }
+}
