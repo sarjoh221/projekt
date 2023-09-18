@@ -1,5 +1,5 @@
 /*LITEN skärm*/
-@media only screen and (max-width: 540px) {
+@media only screen and (max-width: 430px) {
 
   body {
     padding: 2rem;
@@ -115,7 +115,128 @@
 }
 
 /*STOR skärm*/
-@media only screen and (min-width: 541px) {
+@media only screen and (min-width: 431px) and (max-width: 1199px){
+  #menu-toggle {
+    display: none;
+  }
+
+  #menuIcon {
+    display: none;
+  }
+
+  #menu li {
+    display: inline;
+  }
+
+
+
+
+
+/*BODY*/
+body {
+  padding: 2.5rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+/*HEADER*/
+
+
+header a {
+  text-decoration: overline;
+  color: rgba(0, 0, 0, 0.88);
+}
+
+header a h1{
+  margin-top: 0;
+  letter-spacing: 0.05em;
+}
+
+/*NAV*/
+
+#menu {
+  text-align: center;
+}
+
+
+#menu li a {
+  text-decoration: none;
+  color: rgb(47, 15, 77);
+  font-size: 1.2rem;
+  margin: 1em;
+}
+
+
+
+/*OM OSS*/
+
+.anställd img {
+  width: 50vw;
+  display: inline;
+  justify-content: center;
+  min-width: 370px;
+}
+
+.anställd img:hover {
+  border: 0 2em 0 2em;
+  border-style: outset;
+}
+
+
+.anställd {
+  margin-bottom: 1rem;
+  width: 50vw;
+}
+
+.anställd p {
+  padding-bottom: 2em;
+  border-bottom: #C2E5F2 dashed;
+  width: 100vw;
+}
+
+.container-anstallda {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+h1,
+#kontakten {
+  text-align: center;
+}
+
+/*GALLERI*/
+
+
+/*OBS får ej ett block med bild+beskrivning+pris+knapp att stanna vid en viss minimal bredd. nu kan de bli jättesmå...*/
+
+#produkter {
+  display: flex;
+  gap: 1.3em;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+
+#produkter img,
+#produkter p {
+  color: rgba(0, 0, 0, 0.846);
+  flex-direction: row;
+  max-width: 65vw;
+}
+
+#produkter button {
+  background-color: aliceblue;
+  border: 1em;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+}
+
+@media only screen and (min-width: 1280px) {
   #menu-toggle {
     display: none;
   }
